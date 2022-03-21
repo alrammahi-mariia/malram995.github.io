@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Luckiest+Guy&family=Rajdhani:wght@300&family=VT323&family=Wallpoet&display=swap");
+
+body {
+  font-family: "Bungee Shade", cursive;
+  background-image: linear-gradient(
+    to right top,
+    rgb(33, 26, 74),
+    rgb(28, 68, 83),
+    rgb(46, 55, 100),
+    rgb(67, 42, 124),
+    rgb(67, 32, 80)
+  );
+  background-repeat: no-repeat;
+  background-size: fill;
+  text-align: center;
+  background-attachment: fixed;
+  color: rgb(201, 187, 235);
+}
+
+h1 {
+  font-size: 4rem;
+  margin-top: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.game {
+  margin-top: 5rem;
+}
+
+#score {
+  font-size: 2rem;
+  font-family: "Bungee Shade", cursive;
+}
+
+.circles {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 6rem auto;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.circle {
+  height: 160px;
+  width: 160px;
+  background-color: rgb(98, 70, 161);
+  box-shadow: 5px 10px 5px rgb(33, 26, 74);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.circle:hover {
+  transform: scale(106%);
+}
+
+.circle.active {
+  background-image: url(./flying_cat.jpg.png);
+  background-size: cover;
+  transform: scale(105%);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+button {
+  font-family: inherit;
+  font-size: 1.8rem;
+  color: rgb(32, 19, 61);
+  background-color: rgb(201, 187, 235);
+  box-shadow: 5px 10px 5px rgb(33, 27, 70);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(105%);
+}
+
+#popup_box {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.score_text {
+  background-color: rgb(201, 187, 235);
+  padding: 2rem;
+  width: 40%;
+  height: 40%;
+  border-radius: 10px;
+  position: relative;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.score_text button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: transparent;
+  border: 0.3px solid rgb(33, 27, 70);
+  width: 9rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.score_text button:hover {
+  transform: scale(105%);
+}
+
+#result {
+  font-size: 1.5rem;
+  font-family: "Rajdhani", sans-serif;
+}
+
+#stop {
+  display: none;
+}
